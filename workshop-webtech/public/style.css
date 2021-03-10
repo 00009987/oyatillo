@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===== General Styling ===== */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 3.5rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	color: #313131;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ===== Navigation Bar ===== */
+header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem 0;
+	min-height: 10vh;
+}
+
+nav,
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+nav h1 {
+	padding: 0;
+}
+
+nav li {
+	padding: 0 2rem;
+	align-self: center;
+}
+
+nav h1 a {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+nav a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 1.7rem;
+	transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+	color: rgb(196, 78, 57);
+}
+
+/* ===== Main Section ===== */
+main {
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+main p {
+	font-size: 3.5rem;
+}
+
+main .create-btn {
+	margin-top: 2rem;
+	font-size: 2.5rem;
+	background: #1e21be;
+	text-align: center;
+	padding: 1rem 2.5rem;
+	color: #fff;
+	display: inline-block;
+	transition: background 0.3s ease-in-out;
+	border: none;
+	cursor: pointer;
+}
+
+main .create-btn:hover {
+	background: #0e106e;
+}
+
+/* ===== Form Section ===== */
+
+.form-main {
+	justify-content: flex-start;
+}
+
+.form-main h2 {
+	font-size: 2.5rem;
+	font-weight: normal;
+	margin-top: 2rem;
+	flex: 1 1 5rem;
+}
+
+.form-main form {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 40rem;
+	width: 40%;
+}
+
+.form-main label {
+	font-size: 2rem;
+	margin: 1.5rem 0;
+}
+
+.form-main input {
+	padding: 1rem 0.5rem;
+}
+
+.form-main button {
+	margin: 2.5rem 0;
+	max-width: 40%;
+}
+
+.error,
+.success {
+	border: 1px solid rgba(255, 0, 0, 0.2);
+	background: rgba(255, 0, 0, 0.1);
+	font-size: 1.8rem;
+	padding: 1rem;
+}
+
+.success {
+	border: 1px solid green;
+	background: rgba(0, 128, 0, 0.1);
+}
+
+/* ===== All Notes Section ===== */
+.notes-main {
+	justify-content: flex-start;
+}
+
+.notes {
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.note-item {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	width: 50%;
+	transition: background 0.3s ease-in-out;
+}
+
+.note-item:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.note-item a {
+	font-size: 2rem;
+}
+
+.note-item a:nth-child(1) {
+	color: blue;
+}
+
+.note-item a:nth-child(2) {
+	border: none;
+	background: tomato;
+	color: #fff;
+	padding: 0.5rem 1rem;
+}
