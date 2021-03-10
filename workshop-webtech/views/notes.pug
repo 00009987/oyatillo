@@ -17,6 +17,8 @@ header
         a(href='/archive') Archive
 main.notes-main
   ul.notes
-    li.note-item
-      a(href='notes/note_id') Note title
-      a.delete-note(href='notes/note_id/delete') Delete
+    each note in notes  
+      li.note-item= note
+    //- li.note-item
+    //-   a(href='notes/note_id') Note title
+    //-   a.delete-note(href='notes/note_id/delete') Delete
