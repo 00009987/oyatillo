@@ -1,2 +1,4 @@
 # oyatillo
-do npm install express pug body-parser before launching
+
+before using do:
+npm install express pug body-parser
