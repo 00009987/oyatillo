@@ -1,0 +1,6 @@
+extends layout.pug 
+
+block content 
+    h1= note.title 
+    a(href="note/" + ID +"/archive").archive Archive
+    p= note.details

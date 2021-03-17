@@ -1,0 +1,18 @@
+extends layout.pug 
+
+block content
+  main.form-main
+    h2 Create Note
+    
+    //- if error 
+    //- p.error Please add note (title &amp; body) before submitting
+
+    //- if success 
+    //- p.success Note was added successfully
+
+    form(method='POST')
+      label(for='title') Title 
+      input#title(type='text' name='title' autocomplete='off')
+      label(for='body')  Body 
+      textarea#bods(name='details' cols='30' rows='10')
+      button.create-btn(type='submit') Create note

@@ -1,0 +1,9 @@
+extends layout.pug 
+
+block content
+  main.notes-main
+   each note, index in notes
+        li.note-item
+          a(href='/notes/' + index)= note.title
+          a.delete-note(href='/notes/'+ index + '/archive/delete') Delete
+
