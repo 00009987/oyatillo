@@ -1,32 +1,18 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(name='description' content='Simple Note App')
-  link(rel='stylesheet' href='/static/style.css')
-  title Note App
-header
-  nav
-    h1
-      a(href='/') Notes App
-    ul
-      li
-        a(href='/notes') All Notes
-      li
-        a(href='/archive') Archive
-main.form-main
-  h2 Create Note
-  
-  //- if error 
-  //- p.error Please add note (title &amp; body) before submitting
+extends layout.pug 
 
-  //- if success 
-  //- p.success Note was added successfully
+block content
+  main.form-main
+    h2 Create Note
+    
+    if error 
+    p.error Please add note (title &amp; body) before submitting
 
-  form(method='POST')
-    label(for='title') Title 
-    input#title(type='text' name='title')
-    label(for='body')  Body 
-    textarea#bods(name='details' cols='30' rows='10')
-    button.create-btn(type='submit') Create note
+    if success 
+    p.success Note was added successfully
+
+    form(method='POST')
+      label(for='title') Title 
+      input#title(type='text' name='title' autocomplete='off')
+      label(for='body')  Body 
+      textarea#bods(name='details' cols='30' rows='10')
+      button.create-btn(type='submit') Create note

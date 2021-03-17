@@ -1,22 +1,8 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(name='description' content='Simple Note App')
-  link(rel='stylesheet' href='/static/style.css')
-  title Note App
-header
-  nav
-    h1
-      a(href='/') Notes App
-    ul
-      li
-        a(href='/notes') All Notes
-      li
-        a(href='/archive') Archive
-main
-  p This is very simple note taking app
-  p You can create notes, delete them, archive notes
-  p Supports markdown
-  a.create-btn(href='/notes/create') Create note
+extends layout.pug
+
+block content
+  main
+    p This is very simple note taking app
+    p You can create notes, delete them, archive notes
+    p Supports markdown
+    a.create-btn(href='/notes/create') Create note
